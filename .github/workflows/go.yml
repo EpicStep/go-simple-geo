@@ -16,3 +16,5 @@ jobs:
       - name: Run coverage
         run: go test ./... -race -coverprofile=coverage.txt -covermode=atomic
       - uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
