@@ -1,9 +1,10 @@
 package geo_test
 
 import (
-	"github.com/EpicStep/go-simple-geo"
 	"math"
 	"testing"
+
+	geo "github.com/EpicStep/go-simple-geo"
 )
 
 func TestDistance(t *testing.T) {
