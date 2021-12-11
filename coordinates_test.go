@@ -82,6 +82,14 @@ func TestDistance_ToMeters(t *testing.T) {
 	}
 }
 
+func TestNewCoordinatesFromRadians(t *testing.T) {
+	c := geo.NewCoordinatesFromRadians(geo.Radian(0.1), geo.Radian(0.1))
+
+	if c.Latitude != geo.Radian(0.1) || c.Longitude != geo.Radian(0.1) {
+		t.Fail()
+	}
+}
+
 func BenchmarkCoordinates_Distance(b *testing.B) {
 	d := geo.NewCoordinatesFromDegrees(55.9606, 38.0456)
 	d2 := geo.NewCoordinatesFromDegrees(59.9386, 30.3141)
