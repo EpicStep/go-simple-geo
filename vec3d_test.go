@@ -56,11 +56,11 @@ func TestDistance(t *testing.T) {
 		},
 	}
 
-	for _, test := range tests {
-		distance := tests[0].v.SquareDistance(test.v)
+	for _, tt := range tests {
+		distance := tests[0].v.SquareDistance(tt.v)
 
-		if distance != test.want {
-			t.Fatalf("incorrect answer for x:%2f, y:%2f, z:%2f. Want: %2f", test.v.X, test.v.Y, test.v.Z, test.want)
+		if distance != tt.want {
+			t.Fatalf("incorrect answer for x:%2f, y:%2f, z:%2f. Want: %2f", tt.v.X, tt.v.Y, tt.v.Z, tt.want)
 		}
 	}
 }
