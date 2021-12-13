@@ -19,23 +19,15 @@ go get github.com/EpicStep/go-simple-geo
 package main
 
 import (
-	"github.com/EpicStep/go-simple-geo"
-	"log"
-	"math"
+	"fmt"
+	
+	"github.com/EpicStep/go-simple-geo/geo"
 )
 
 func main() {
-	origin := geo.Vec3d{
-		X: 0,
-		Y: 0,
-		Z: 0,
-	}
+	c1 := geo.NewCoordinatesFromDegrees(geo.Degree(55.7522), geo.Degree(37.6156))
+	c2 := geo.NewCoordinatesFromDegrees(geo.Degree(59.9386), geo.Degree(30.3141))
 
-	c1 := geo.Coordinates{
-		Latitude:  math.Pi,
-		Longitude: 0,
-	}
-
-	log.Println(origin.SquareDistance(c1.ToVec3d()))
+	fmt.Println(c1.Distance(c2).ToKilometers())
 }
 ```
