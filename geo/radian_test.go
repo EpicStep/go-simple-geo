@@ -22,6 +22,10 @@ func TestRadian_ToDegrees(t *testing.T) {
 			v:    geo.Radian(0.5),
 			want: "28.65",
 		},
+		{
+			v:    geo.Radian(4),
+			want: "229.18",
+		},
 	}
 
 	for _, tt := range tests {

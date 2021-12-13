@@ -25,6 +25,11 @@ func TestCoordinates_Distance(t *testing.T) {
 			v2:   geo.NewCoordinatesFromDegrees(54.7818, 32.0401),
 			want: "369.22",
 		},
+		{
+			v:    geo.NewCoordinatesFromDegrees(40.7143, -74.006),
+			v2:   geo.NewCoordinatesFromDegrees(37.7749, -122.419),
+			want: "4129.02",
+		},
 	}
 
 	for _, tt := range tests {
