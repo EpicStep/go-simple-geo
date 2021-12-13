@@ -1,13 +1,15 @@
 package geo
 
-import "math"
+import (
+	"math"
+)
 
 // Degree type.
 type Degree float64
 
 // ToRadians convert degrees to radians
 func (d Degree) ToRadians() Radian {
-	return Radian(float64(d) * (math.Pi / angle))
+	return Radian(float64(d) * (math.Pi / unfoldedAngle))
 }
 
 // Float64 return float64 value of Degree type.

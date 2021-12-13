@@ -9,7 +9,7 @@ type Vec3d struct {
 	X, Y, Z float64
 }
 
-// SquareDistance return a square of the distance between two points.
+// SquareDistance return a square of the distance between two vectors.
 func (vec *Vec3d) SquareDistance(v *Vec3d) float64 {
 	return math.Pow(vec.X-v.X, 2) + math.Pow(vec.Y-v.Y, 2) + math.Pow(vec.Z-v.Z, 2)
 }
