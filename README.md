@@ -1,6 +1,6 @@
 go-simple-geo is a library for simple geo calculations.
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/EpicStep/go-simple-geo.svg)](https://pkg.go.dev/github.com/EpicStep/go-simple-geo)
+[![Go Reference](https://pkg.go.dev/badge/github.com/EpicStep/go-simple-geo.svg)](https://pkg.go.dev/github.com/EpicStep/go-simple-geo/v2)
 [![Lint](https://github.com/EpicStep/go-simple-geo/actions/workflows/lint.yml/badge.svg)](https://github.com/EpicStep/go-simple-geo/actions/workflows/lint.yml)
 [![Tests](https://github.com/EpicStep/go-simple-geo/actions/workflows/go.yml/badge.svg)](https://github.com/EpicStep/go-simple-geo/actions/workflows/go.yml)
 [![codecov](https://codecov.io/gh/EpicStep/go-simple-geo/branch/master/graph/badge.svg?token=UE3A8O81TA)](https://codecov.io/gh/EpicStep/go-simple-geo)
@@ -10,7 +10,7 @@ go-simple-geo is a library for simple geo calculations.
 
 ## Installation
 ```bash
-go get github.com/EpicStep/go-simple-geo
+go get github.com/EpicStep/go-simple-geo/v2
 ```
 
 ## Example
@@ -21,7 +21,7 @@ package main
 import (
 	"fmt"
 	
-	"github.com/EpicStep/go-simple-geo/geo"
+	"github.com/EpicStep/go-simple-geo/geo/v2"
 )
 
 func main() {
