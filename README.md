@@ -21,7 +21,7 @@ package main
 import (
 	"fmt"
 	
-	"github.com/EpicStep/go-simple-geo/geo/v2"
+	"github.com/EpicStep/go-simple-geo/v2/geo"
 )
 
 func main() {
