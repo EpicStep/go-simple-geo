@@ -25,9 +25,9 @@ import (
 )
 
 func main() {
-	c1 := geo.NewCoordinatesFromDegrees(geo.Degree(55.7522), geo.Degree(37.6156))
-	c2 := geo.NewCoordinatesFromDegrees(geo.Degree(59.9386), geo.Degree(30.3141))
+	c1 := geo.NewCoordinatesFromDegrees(55.7522, 37.6156)
+	c2 := geo.NewCoordinatesFromDegrees(59.9386, 30.3141)
 
-	fmt.Println(c1.Distance(c2).ToKilometers())
+	fmt.Println(c1.Distance(c2))
 }
 ```
