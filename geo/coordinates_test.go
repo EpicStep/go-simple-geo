@@ -88,9 +88,9 @@ func TestDistance_ToMeters(t *testing.T) {
 }
 
 func TestNewCoordinatesFromRadians(t *testing.T) {
-	c := geo.NewCoordinatesFromRadians(geo.Radian(0.1), geo.Radian(0.1))
+	c := geo.NewCoordinatesFromRadians(0.1, 0.1)
 
-	if c.Latitude != geo.Radian(0.1) || c.Longitude != geo.Radian(0.1) {
+	if c.Latitude != 0.1 || c.Longitude != 0.1 {
 		t.Fail()
 	}
 }

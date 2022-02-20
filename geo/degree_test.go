@@ -9,28 +9,28 @@ import (
 
 func TestDegree_ToRadians(t *testing.T) {
 	type test struct {
-		v    geo.Degree
+		v    float64
 		want string
 	}
 
 	tests := []test{
 		{
-			v:    geo.Degree(100),
+			v:    100,
 			want: "1.75",
 		},
 		{
-			v:    geo.Degree(57.3),
+			v:    57.3,
 			want: "1.00",
 		},
 		{
-			v:    geo.Degree(1),
+			v:    1,
 			want: "0.02",
 		},
 	}
 
 	for _, tt := range tests {
-		if x := fmt.Sprintf("%.2f", tt.v.ToRadians().Float64()); x != tt.want {
-			t.Fatalf("incorrect answer for %.2f. Want: %s. Got: %s", tt.v.Float64(), tt.want, x)
+		if x := fmt.Sprintf("%.2f", geo.DegreeToRadians(tt.v)); x != tt.want {
+			t.Fatalf("incorrect answer for %.2f. Want: %s. Got: %s", tt.v, tt.want, x)
 		}
 	}
 }

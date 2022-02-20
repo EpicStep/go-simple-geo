@@ -16,11 +16,11 @@ func (vec *Vec3d) SquareDistance(v *Vec3d) float64 {
 
 // ToVec3d return Vec3d from Coordinates.
 func (c *Coordinates) ToVec3d() *Vec3d {
-	r := math.Cos(c.Latitude.Float64())
+	r := math.Cos(c.Latitude)
 
 	return &Vec3d{
-		X: math.Cos(c.Longitude.Float64()) * r,
-		Y: math.Sin(c.Longitude.Float64()) * r,
-		Z: math.Sin(c.Latitude.Float64()),
+		X: math.Cos(c.Longitude) * r,
+		Y: math.Sin(c.Longitude) * r,
+		Z: math.Sin(c.Latitude),
 	}
 }
