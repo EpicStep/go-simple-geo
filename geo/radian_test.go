@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/EpicStep/go-simple-geo/geo"
+	"github.com/EpicStep/go-simple-geo/v2/geo"
 )
 
 func TestRadian_ToDegrees(t *testing.T) {

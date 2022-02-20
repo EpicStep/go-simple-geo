@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/EpicStep/go-simple-geo/geo"
+	"github.com/EpicStep/go-simple-geo/v2/geo"
 )
 
 func TestDistance(t *testing.T) {
